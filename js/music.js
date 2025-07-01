@@ -1,4 +1,4 @@
-    const API_KEY = 'AIzaSyD2caERyo5Ap2WAwc2X6Um5KCVNgM6oRUc';
+    const API_KEY = '';
 
     async function searchMusic() {
       const query = document.getElementById("searchInput").value;
