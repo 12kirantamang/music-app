@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Finder Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-music"></i>
+        </div>
+        <div class="logo-text">MusicFinder </div>
+      </div>
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search for artist and song (e.g. Ed Sheeran - Shape of You)">
+          <button onclick="searchMusic()">
+            <i class="fas fa-search"></i> Search
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="panel now-playing">
+        <h2 class="section-title">Now Playing</h2>
+        <div class="album-art-container">
+          <img id="albumArt" class="album-art" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Album Art">
+        </div>
+        <div class="song-info">
+          <h3 id="songTitle" class="song-title">Discover New Music</h3>
+          <div id="artistName" class="artist-name">Search for your favorite songs</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2 class="section-title">Song Lyrics</h2>
+        <div id="lyricsBox" class="lyrics-container">
+          <p>Enter an artist and song in the search bar to find lyrics.</p>
+          <p>Example: "The Weeknd - Blinding Lights"</p>
+        </div>
+      </div>
+
+      <div class="panel" style="grid-column: 1 / -1;">
+        <h2 class="section-title">Music Video</h2>
+        <div id="videoStatus" class="status-message">Video will appear here after search</div>
+        <div class="video-container">
+          <iframe id="youtubePlayer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h3>How to Use MusicFinder Pro</h3>
+        <p>Enter an artist and song name in the search box (e.g. "Coldplay - Viva La Vida"). The app will display album art, lyrics, and an autoplaying music video. Note: Videos play muted by default - use the volume control in the player to unmute.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>MusicFinder Pro &copy; 2023 | Find your favorite music lyrics and videos</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

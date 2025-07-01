@@ -1,0 +1,156 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(40, 38, 38);
+      height: 10vh;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 24px;
+      padding-right: 300px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .logo img {
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .nav-search input {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .nav-search button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #1DB954;
+      color: white;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .nav-search button:hover {
+      background-color: #1ed760;
+    }
+
+    .Music {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .image-song img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .song-title {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .song-title h3 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .song-title span {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .lyrics {
+      margin-top: 30px;
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .music-box {
+      margin-top: 30px;
+    }
+
+    iframe {
+      border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    padding-right: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .nav-search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-search input,
+  .nav-search button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .Music {
+    padding: 15px;
+  }
+
+  .image-song img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .song-title h3 {
+    font-size: 20px;
+  }
+
+  .song-title span {
+    font-size: 16px;
+  }
+
+  .lyrics {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .music-box iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}

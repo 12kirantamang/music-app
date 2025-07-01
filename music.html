@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Finder</title>
+  <link rel="stylesheet" href="css/music.css">
+</head>
+<body>
+
+  <div class="nav">
+    <div class="logo">
+      <img src="img/music-notes.png" alt="logo" />
+      <span>Music</span>
+    </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search Music..." id="searchInput" />
+      <button onclick="searchMusic()">Search</button>
+    </div>
+  </div>
+
+  <div class="Music">
+    <div class="image-song">
+      <img id="albumArt" src="img/music-objects-coffee_23-2147670279.jpg" alt="Album Art" />
+      <div class="song-title">
+        <h3 id="songTitle">Song Title</h3>
+        <span id="artistName">Artist Name</span>
+      </div>
+    </div>
+
+    <div class="lyrics" id="lyricsBox">
+      <p>Lyrics will appear here...</p><br>
+      
+    </div>
+
+    <div class="music-box">
+      <iframe id="youtubePlayer" width="360" height="215" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="js/music.js"></script>
+
+</body>
+</html>
